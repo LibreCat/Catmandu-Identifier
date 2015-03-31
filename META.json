@@ -1,5 +1,5 @@
 {
-   "abstract" : "Blah blah blah",
+   "abstract" : "Namespace for handling/fixing identifier, e.g. ISBN, ISSN",
    "author" : [
       "Vitali Peil <vitali.peil@uni-bielefeld.de>"
    ],

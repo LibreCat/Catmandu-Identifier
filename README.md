@@ -1,14 +1,11 @@
 # NAME
 
-Catmandu::Identifier - Blah blah blah
+Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
-# SYNOPSIS
+# MODULES
 
-    use Catmandu::Identifier;
-
-# DESCRIPTION
-
-Catmandu::Identifier is
+- [Catmandu::Fix::isbn](https://metacpan.org/pod/Catmandu::Fix::isbn)
+- [Catmandu::Fix::issn](https://metacpan.org/pod/Catmandu::Fix::issn)
 
 # AUTHOR
 

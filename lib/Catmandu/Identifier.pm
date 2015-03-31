@@ -1,7 +1,6 @@
 package Catmandu::Identifier;
 
 use strict;
-use 5.008_005;
 our $VERSION = '0.01';
 
 1;
@@ -11,15 +10,17 @@ __END__
 
 =head1 NAME
 
-Catmandu::Identifier - Blah blah blah
+Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
-=head1 SYNOPSIS
+=head1 MODULES
 
-  use Catmandu::Identifier;
+=over
 
-=head1 DESCRIPTION
+=item * L<Catmandu::Fix::isbn>
 
-Catmandu::Identifier is
+=item * L<Catmandu::Fix::issn>
+
+=back
 
 =head1 AUTHOR
 

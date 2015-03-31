@@ -1,8 +1,12 @@
+#!/usr/bin/env perl
+
 use strict;
 use Test::More;
-use Catmandu::Identifier;
 
-# replace with the actual test
-ok 1;
+my $pkg;
+BEGIN {
+  $pkg = 'Catmandu::Identifier';
+  use_ok $pkg;
+}
 
 done_testing;
