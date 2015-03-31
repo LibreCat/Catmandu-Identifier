@@ -24,7 +24,7 @@ Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
 =head1 AUTHOR
 
-Vitali Peil E<lt>vitali.peil@uni-bielefeld.deE<gt>
+Vitali Peil
 
 =head1 COPYRIGHT
 
@@ -36,5 +36,7 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
 =head1 SEE ALSO
+
+L<Catmandu::Fix>
 
 =cut

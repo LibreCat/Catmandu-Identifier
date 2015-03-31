@@ -9,7 +9,7 @@ Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
 # AUTHOR
 
-Vitali Peil <vitali.peil@uni-bielefeld.de>
+Vitali Peil
 
 # COPYRIGHT
 
@@ -21,3 +21,5 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
 # SEE ALSO
+
+[Catmandu::Fix](https://metacpan.org/pod/Catmandu::Fix)

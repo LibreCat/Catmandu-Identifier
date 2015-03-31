@@ -1,7 +1,7 @@
 {
    "abstract" : "Namespace for handling/fixing identifier, e.g. ISBN, ISSN",
    "author" : [
-      "Vitali Peil <vitali.peil@uni-bielefeld.de>"
+      "Vitali Peil"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Dist::Zilla version 5.031, Dist::Milla version v1.0.14, CPAN::Meta::Converter version 2.143240",
@@ -24,9 +24,14 @@
       ]
    },
    "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
       "configure" : {
          "requires" : {
-            "Module::Build::Tiny" : "0.039"
+            "Module::Build" : "0.3601"
          }
       },
       "develop" : {
@@ -37,7 +42,10 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008005"
+            "Business::ISBN" : "2.09",
+            "Business::ISSN" : "0.91",
+            "Catmandu" : "0.9301",
+            "perl" : "v5.10.1"
          }
       },
       "test" : {
@@ -47,6 +55,20 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.01"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/LibreCat/Catmandu-Identifier/issues"
+      },
+      "homepage" : "https://github.com/LibreCat/Catmandu-Identifier",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/LibreCat/Catmandu-Identifier.git",
+         "web" : "https://github.com/LibreCat/Catmandu-Identifier"
+      }
+   },
+   "version" : "0.01",
+   "x_contributors" : [
+      "vpeil <vitali.peil@uni-bielefeld.de>"
+   ]
 }
 
