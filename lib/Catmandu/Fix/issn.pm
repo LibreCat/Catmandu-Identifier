@@ -9,13 +9,6 @@ has path => (fix_arg => 1);
 
 with 'Catmandu::Fix::SimpleGetValue';
 
-#has isbn_obj => (is => 'lazy');
-
-#sub _build_isbn_obj {
-#  my ($self, $isbn) = @_;
-#  Business::ISBN->new($isbn);
-#}
-
 sub emit_value {
   my ($self, $var) = @_;
   "${var} = Business::ISSN->new(${var})->as_string if is_value(${var});";
@@ -23,12 +16,14 @@ sub emit_value {
 
 =head1 NAME
 
-Catmandu::Fix::issn - normalize the issn value of a key
+Catmandu::Fix::issn - normalize the issn value for a given key
 
 =head1 SYNOPSIS
 
-# Normalize the ISSN value of foo. E.g. foo => ''
-issn(foo) # foo => ''
+  # Normalize the ISSN value of issn_field.
+  # e.g. issn_field => '1553667x'
+
+  issn(issn_field) # issn_field => '1553-667X'
 
 =head1 SEE ALSO
 

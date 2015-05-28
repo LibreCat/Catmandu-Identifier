@@ -2,6 +2,7 @@
 
 use strict;
 use Test::More;
+use Test::Exception;
 
 my $pkg;
 BEGIN {
@@ -10,13 +11,21 @@ BEGIN {
 }
 require_ok $pkg;
 
+dies_ok {$pkg->new()->fix({issn => '1553667x'})} "path required";
+
+lives_ok {$pkg->new('issn')->fix({issn => '1553667x'})} "path required";
+
 is_deeply
   $pkg->new('issn')->fix({issn => '1553667x'}),
   {issn => '1553-667X'},
   "normalize issn";
 
 is_deeply
-  $pkg->new('identifier.*.issn')->fix( {identifier => [{issn => '1553667X'},{issn => '0355-4325'}]} ),
+  $pkg->new('identifier.*.issn')->fix(
+    {identifier => [
+      {issn => '1553667X'},
+      {issn => '0355-4325'}
+      ]} ),
   {identifier => [{issn => '1553-667X'},{issn => '0355-4325'}]},
   "normalize issn with complex path";
 

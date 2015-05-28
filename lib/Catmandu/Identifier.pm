@@ -12,6 +12,16 @@ __END__
 
 Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
+=begin markdown
+
+# STATUS
+
+[![Build Status](https://travis-ci.org/LibreCat/Catmandu-Identifier.svg?branch=master)](https://travis-ci.org/LibreCat/Catmandu-Identifier)
+[![Coverage](https://coveralls.io/repos/LibreCat/Catmandu-Identifier/badge.png?branch=master)](https://coveralls.io/r/LibreCat/Catmandu-Identifier)
+[![CPANTS kwalitee](http://cpants.cpanauthors.org/dist/Catmandu-Identifier.png)](http://cpants.cpanauthors.org/dist/Catmandu-Identifier)
+
+=end markdown
+
 =head1 MODULES
 
 =over
@@ -24,11 +34,7 @@ Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
 =head1 AUTHOR
 
-Vitali Peil
-
-=head1 COPYRIGHT
-
-Copyright 2015- Vitali Peil
+Vitali Peil, C<< <vitali.peil at uni-bielefeld.de> >>
 
 =head1 LICENSE
 
