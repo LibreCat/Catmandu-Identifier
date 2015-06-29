@@ -2,6 +2,12 @@
 
 Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
+# STATUS
+
+[![Build Status](https://travis-ci.org/LibreCat/Catmandu-Identifier.svg?branch=master)](https://travis-ci.org/LibreCat/Catmandu-Identifier)
+[![Coverage](https://coveralls.io/repos/LibreCat/Catmandu-Identifier/badge.png?branch=master)](https://coveralls.io/r/LibreCat/Catmandu-Identifier)
+[![CPANTS kwalitee](http://cpants.cpanauthors.org/dist/Catmandu-Identifier.png)](http://cpants.cpanauthors.org/dist/Catmandu-Identifier)
+
 # MODULES
 
 - [Catmandu::Fix::isbn](https://metacpan.org/pod/Catmandu::Fix::isbn)
@@ -9,11 +15,7 @@ Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
 # AUTHOR
 
-Vitali Peil
-
-# COPYRIGHT
-
-Copyright 2015- Vitali Peil
+Vitali Peil, `<vitali.peil at uni-bielefeld.de>`
 
 # LICENSE
 
