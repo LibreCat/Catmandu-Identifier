@@ -6,7 +6,13 @@ use Moo;
 use Catmandu::Fix::Has;
 
 has path => (fix_arg => 1);
-has length => (fix_arg => 1, default => sub{ 10 });
+has length => (fix_opt => 1, default => sub {10});
+
+sub BUILD {
+  my $self = shift;
+  ($self->length != 10 && $self->length != 13)
+    && ( Catmandu::BadArg->throw("Second optional argument length must be either 10 or 13.\n") );
+}
 
 with 'Catmandu::Fix::SimpleGetValue';
 
@@ -16,10 +22,8 @@ sub emit_value {
   my $len = $self->length;
   if ($len == 10) {
     "${var} = Business::ISBN->new(${var})->as_isbn10->as_string if is_value(${var});";
-  } elsif ($len == 13) {
-    "${var} = Business::ISBN->new(${var})->as_isbn13->as_string if is_value(${var});";
   } else {
-    Catmandu::BadArg->throw("Second (optional) argument must be either 10 or 13.\n");
+    "${var} = Business::ISBN->new(${var})->as_isbn13->as_string if is_value(${var});";
   }
 }
 
