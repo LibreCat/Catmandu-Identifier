@@ -31,7 +31,8 @@
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.3601"
+            "Module::Build" : "0.3601",
+            "Module::Build::Tiny" : "0.039"
          }
       },
       "develop" : {
