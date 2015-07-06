@@ -1,6 +1,8 @@
 /Catmandu-Identifier-*
 /.build
 /_build*
+/blib
+/cover_db
 /Build
 MYMETA.*
 !META.json
