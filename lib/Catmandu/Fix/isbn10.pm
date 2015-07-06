@@ -16,4 +16,21 @@ sub emit_value {
 
 }
 
+=head1 NAME
+
+Catmandu::Fix::isbn10 - normalize the isbn value of a key in 10-digit form
+
+=head1 SYNOPSIS
+
+  # Normalize the ISBN value of isbn_field.
+  # e.g. isbn_field => '1565922573'
+
+  isbn10(isbn_field) # isbn_field => '1-56592-257-3'
+
+=head1 SEE ALSO
+
+L<Catmandu::Fix>, L<Catmandu::Fix::isbn13>
+
+=cut
+
 1;
