@@ -36,6 +36,8 @@ Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
 =item * L<Catmandu::Fix::issn>
 
+=item * L<catmandu::Fix::uid>
+
 =back
 
 =head1 AUTHOR
