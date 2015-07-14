@@ -36,4 +36,4 @@ is_deeply
     {test => 'fail' },
     "is invalid";
 
-done_testing 5;
+done_testing;

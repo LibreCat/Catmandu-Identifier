@@ -38,7 +38,11 @@ Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
 =head1 AUTHOR
 
-Vitali Peil, C<< <vitali.peil at uni-bielefeld.de> >>
+Vitali Peil
+
+=head2 CONTRIBUTOR
+
+Patrick Hochstenbach
 
 =head1 LICENSE
 
