@@ -9,10 +9,12 @@ on configure => sub {
 };
 
 on test => sub {
-    requires 'Test::More', '0.96';
+  requires 'Test::More', '0.96';
+  requires 'Test::LWP::UserAgent', '0';
 };
 
 requires 'Catmandu', '>=0.94';
 requires 'Business::ISSN', '0.91';
 requires 'Business::ISBN', '2.09';
-requires 'Data::UUID';
+requires 'Data::UUID',0;
+requires 'LWP::Simple',0;
