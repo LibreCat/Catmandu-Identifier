@@ -12,6 +12,6 @@ on test => sub {
     requires 'Test::More', '0.96';
 };
 
-requires 'Catmandu', '0.9301';
+requires 'Catmandu', '>=0.94';
 requires 'Business::ISSN', '0.91';
 requires 'Business::ISBN', '2.09';
