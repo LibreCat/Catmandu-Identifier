@@ -15,3 +15,4 @@ on test => sub {
 requires 'Catmandu', '>=0.94';
 requires 'Business::ISSN', '0.91';
 requires 'Business::ISBN', '2.09';
+requires 'Data::UUID';
