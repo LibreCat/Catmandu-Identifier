@@ -2,5 +2,8 @@ Revision history for Catmandu-Identifier
 
 {{$NEXT}}
 
+0.02  2015-07-14 15:06:46 CEST
+    - new fixes is_valid_isbn, is_valid_issn as condition (thanks @phochste)
+
 0.01  2015-07-06 22:36:34 CEST
         - Initial release

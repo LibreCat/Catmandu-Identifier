@@ -12,12 +12,17 @@ Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
 - [Catmandu::Fix::isbn10](https://metacpan.org/pod/Catmandu::Fix::isbn10)
 - [Catmandu::Fix::isbn13](https://metacpan.org/pod/Catmandu::Fix::isbn13)
-- [Catmandu::Fix::isbn\_is\_valid](https://metacpan.org/pod/Catmandu::Fix::isbn_is_valid)
+- [Catmandu::Fix::is\_valid\_isbn](https://metacpan.org/pod/Catmandu::Fix::is_valid_isbn)
+- [Catmandu::Fix::is\_valid\_issn](https://metacpan.org/pod/Catmandu::Fix::is_valid_issn)
 - [Catmandu::Fix::issn](https://metacpan.org/pod/Catmandu::Fix::issn)
 
 # AUTHOR
 
-Vitali Peil, `<vitali.peil at uni-bielefeld.de>`
+Vitali Peil
+
+## CONTRIBUTOR
+
+Patrick Hochstenbach
 
 # LICENSE
 
