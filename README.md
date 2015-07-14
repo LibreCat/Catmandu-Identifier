@@ -15,6 +15,7 @@ Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 - [Catmandu::Fix::is\_valid\_isbn](https://metacpan.org/pod/Catmandu::Fix::is_valid_isbn)
 - [Catmandu::Fix::is\_valid\_issn](https://metacpan.org/pod/Catmandu::Fix::is_valid_issn)
 - [Catmandu::Fix::issn](https://metacpan.org/pod/Catmandu::Fix::issn)
+- [catmandu::Fix::uid](https://metacpan.org/pod/catmandu::Fix::uid)
 
 # AUTHOR
 
