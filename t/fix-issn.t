@@ -29,4 +29,14 @@ is_deeply
   {identifier => [{issn => '1553-667X'},{issn => '0355-4325'}]},
   "normalize issn with complex path";
 
+is_deeply
+  $pkg->new('issn_path')->fix({issn_path => ''}),
+  { issn_path => ''},
+  "empty issn";
+
+is_deeply
+  $pkg->new('issn_path')->fix({}),
+  {},
+  "missing issn";
+
 done_testing;

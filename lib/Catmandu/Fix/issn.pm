@@ -11,7 +11,7 @@ with 'Catmandu::Fix::SimpleGetValue';
 
 sub emit_value {
   my ($self, $var) = @_;
-  "${var} = Business::ISSN->new(${var})->as_string if is_value(${var});";
+  "${var} = Business::ISSN->new(${var})->as_string if is_value(${var}) && length(${var});";
 }
 
 =head1 NAME

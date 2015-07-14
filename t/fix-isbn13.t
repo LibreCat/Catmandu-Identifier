@@ -33,5 +33,14 @@ is_deeply
     ]},
     "normalize isbn with complex path";
 
+is_deeply
+  $pkg->new('isbn_path')->fix({isbn_path => ''}),
+  { isbn_path => ''},
+  "empty isbn 13";
+
+is_deeply
+  $pkg->new('isbn_path')->fix({}),
+  {},
+  "missing isbn 13";
 
 done_testing;

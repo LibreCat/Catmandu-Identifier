@@ -29,4 +29,14 @@ is_deeply
   {identifier => [{isbn => '1-56592-257-3'},{isbn => '0-596-52724-1'}]},
   "normalize isbn 10 with complex path";
 
+is_deeply
+  $pkg->new('isbn_path')->fix({isbn_path => ''}),
+  { isbn_path => ''},
+  "empty isbn 10";
+
+is_deeply
+  $pkg->new('isbn_path')->fix({}),
+  {},
+  "missing isbn 10";
+
 done_testing;
