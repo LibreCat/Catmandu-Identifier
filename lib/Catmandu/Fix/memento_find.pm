@@ -24,7 +24,7 @@ Catmandu::Fix::memento_find - find Mementos for a url
 =head1 SYNOPSIS
 
    # Find mementos for a URL. E.g. myurl => 'http://www.ugent.be'
-   memento_findl)  
+   memento_find(myurl,2013)
 
 =head1 SEE ALSO
 
