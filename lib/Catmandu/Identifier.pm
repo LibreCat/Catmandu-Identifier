@@ -34,6 +34,8 @@ Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
 =item * L<Catmandu::Fix::uuid>
 
+=item * L<Catmandu::Fix::memento_find>
+
 =item * L<Catmandu::Fix::Condition::is_valid_isbn>
 
 =item * L<Catmandu::Fix::Condition::is_valid_issn>
