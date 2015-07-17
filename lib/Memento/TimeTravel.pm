@@ -8,6 +8,7 @@ use JSON;
 use Scalar::Util qw(blessed);
 use LWP::Simple;
 
+
 sub find_mementos {
 	my ($self,$uri,$date) = @_;
 
@@ -26,7 +27,7 @@ sub find_mementos {
 
 	my $mementos = get($api_call);
 
-	return {} unless defined($mementos);
+	return undef unless defined($mementos);
 
 	decode_json($mementos);
 }
