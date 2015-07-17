@@ -30,13 +30,25 @@ Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
 =item * L<Catmandu::Fix::isbn13>
 
+=item * L<Catmandu::Fix::issn>
+
+=item * L<Catmandu::Fix::uuid>
+
 =item * L<Catmandu::Fix::Condition::is_valid_isbn>
 
 =item * L<Catmandu::Fix::Condition::is_valid_issn>
 
-=item * L<Catmandu::Fix::issn>
+=item * L<Catmandu::Fix::Condition::is_uri>
 
-=item * L<Catmandu::Fix::uuid>
+=item * L<Catmandu::Fix::Condition::is_http_uri>
+
+=item * L<Catmandu::Fix::Condition::is_https_uri>
+
+=item * L<Catmandu::Fix::Condition::is_web_uri>
+
+=item * L<Catmandu::Fix::Condition::is_live_web_uri>
+
+=item * L<Catmandu::Fix::Condition::is_archived_web_uri>
 
 =back
 

@@ -16,7 +16,7 @@ sub emit_test {
 
 =head1 NAME
 
-Catmandu::Fix::Condition::is_uri - check of a field contains an HTTP URI
+Catmandu::Fix::Condition::is_http_uri - check of a field contains an HTTP URI
 
 =head1 SYNOPSIS
 

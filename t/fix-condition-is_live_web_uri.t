@@ -5,6 +5,7 @@ use warnings;
 use Test::More;
 use Test::Exception;
 use Catmandu::Fix::set_field;
+use Test::LWP::UserAgent;
 
 my $pkg;
 BEGIN {
@@ -47,3 +48,38 @@ is_deeply
     "is invalid";
 
 done_testing;
+
+
+sub user_agent {
+    my $ua = Test::LWP::UserAgent->new;
+
+    add_response(
+        $ua,
+        '200',
+        'OK',
+        'http://librecat.org',
+        'text/plain',
+        'ok'
+    );
+
+    $LWP::Simple::ua = $ua;
+}
+
+sub add_response {
+    my $ua           = shift;
+    my $code         = shift;
+    my $msg          = shift;
+    my $url          = shift;
+    my $content_type = shift;
+    my $content      = shift;
+
+    $ua->map_response(
+        qr{^\Q$url\E$},
+        HTTP::Response->new(
+            $code,
+            $msg,
+            ['Content-Type' => $content_type ],
+            Encode::encode_utf8($content)
+        )
+    );
+}

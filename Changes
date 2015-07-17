@@ -1,6 +1,8 @@
 Revision history for Catmandu-Identifier
 
 {{$NEXT}}
+    - new fixes is_uri, is_http_uri, is_https_uri, is_web_uri, is_live_web_uri, is_archived_web_uri
+    - new fixes memento_find, uuid
 
 0.02  2015-07-14 15:06:46 CEST
     - new fixes is_valid_isbn, is_valid_issn as condition (thanks @phochste)

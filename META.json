@@ -47,11 +47,14 @@
             "Business::ISSN" : "0.91",
             "Catmandu" : "0.94",
             "Data::UUID" : "0",
+            "Data::Validate::URI" : "0",
+            "LWP::Simple" : "0",
             "perl" : "v5.10.1"
          }
       },
       "test" : {
          "requires" : {
+            "Test::LWP::UserAgent" : "0",
             "Test::More" : "0.96"
          }
       }
