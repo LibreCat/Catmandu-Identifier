@@ -1,6 +1,8 @@
 Revision history for Catmandu-Identifier
 
 {{$NEXT}}
+
+0.03  2015-08-06 13:06:14 CEST
     - new fixes is_uri, is_http_uri, is_https_uri, is_web_uri, is_live_web_uri, is_archived_web_uri
     - new fixes memento_find, uuid
 
