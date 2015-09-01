@@ -6,13 +6,16 @@ perl:
   - "5.14"
   - "5.12"
 install:
-  - cpanm --quiet --notest --force --skip-satisfied .
-  - cpanm --quiet --notest --skip-satisfied Devel::Cover
+  - cpanm --quiet --notest --skip-satisfied Dist::Milla
+  - cpanm --installdeps .
+# full release test
 script:
-- perl Build.PL && cover -test
+    - milla smoke --release --author
+
+# normal tests and report test coverage to coveralls.io
 after_success:
-  - cpanm --quiet --notest --skip-satisfied Devel::Cover::Report::Coveralls
-  - cover -report coveralls
-env: RELEASE_TESTING=1 AUTOMATED_TESTING=1
+    - cpanm --quiet --notest --skip-satisfied Devel::Cover::Report::Coveralls
+    - perl Build.PL && ./Build build && cover -test -report coveralls
+env: RELEASE_TESTING=0 AUTOMATED_TESTING=1
 notifications:
-  email: false
+  email: true
