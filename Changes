@@ -1,6 +1,8 @@
 Revision history for Catmandu-Identifier
 
 {{$NEXT}}
+    - new fixes orcid_bio, orcid_find, orcid_profile, orcid_works
+    - new conditions is_valid_orcid is_live_orcid
 
 0.03  2015-08-06 13:06:14 CEST
     - new fixes is_uri, is_http_uri, is_https_uri, is_web_uri, is_live_web_uri, is_archived_web_uri
@@ -10,4 +12,4 @@ Revision history for Catmandu-Identifier
     - new fixes is_valid_isbn, is_valid_issn as condition (thanks @phochste)
 
 0.01  2015-07-06 22:36:34 CEST
-        - Initial release
+    - Initial release
