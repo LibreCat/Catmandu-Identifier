@@ -49,6 +49,7 @@
             "Data::UUID" : "0",
             "Data::Validate::URI" : "0",
             "LWP::Simple" : "0",
+            "WWW::ORCID" : "0",
             "perl" : "v5.10.1"
          }
       },
