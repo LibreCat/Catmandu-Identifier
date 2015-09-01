@@ -1,16 +1,13 @@
 requires 'perl', 'v5.10.1';
 
-on build => sub {
-  requires 'Module::Build', '0.3601';
-};
-
-on configure => sub {
-  requires 'Module::Build', '0.3601';
-};
-
-on test => sub {
-  requires 'Test::More', '0.96';
+on 'test', sub {
+  requires 'Test::Deep', '0.112';
+  requires 'Test::Exception', '0.32';
+  requires 'Test::More', '1.001003';
+  requires 'Test::Pod', 0;
+  requires 'Log::Any::Test', '1.03';
   requires 'Test::LWP::UserAgent', '0';
+
 };
 
 requires 'Catmandu', '>=0.94';
