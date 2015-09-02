@@ -7,7 +7,6 @@ use Catmandu::Fix::Has;
 
 has path => (fix_arg => 1);
 
-
 with 'Catmandu::Fix::SimpleGetValue';
 
 sub emit_value {
@@ -28,7 +27,7 @@ Catmandu::Fix::orcid_profile - find ORCID works for an identifier
 
 =head1 SEE ALSO
 
-L<Catmandu::Fix>, 
+L<Catmandu::Fix>,
 L<WWW::ORCID>
 
 =cut
