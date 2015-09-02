@@ -1,6 +1,8 @@
 Revision history for Catmandu-Identifier
 
 {{$NEXT}}
+
+0.04  2015-09-02 08:35:06 CEST
     - new fixes orcid_bio, orcid_find, orcid_profile, orcid_works
     - new conditions is_valid_orcid is_live_orcid
 
