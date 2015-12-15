@@ -70,7 +70,7 @@
          "web" : "https://github.com/LibreCat/Catmandu-Identifier"
       }
    },
-   "version" : "0.04",
+   "version" : "0.05",
    "x_contributors" : [
       "Patrick Hochstenbach <patrick.hochstenbach@ugent.be>",
       "vpeil <vitali.peil@uni-bielefeld.de>"
