@@ -12,6 +12,7 @@ Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
 - [Catmandu::Fix::isbn10](https://metacpan.org/pod/Catmandu::Fix::isbn10)
 - [Catmandu::Fix::isbn13](https://metacpan.org/pod/Catmandu::Fix::isbn13)
+- [Catmandu::Fix::isbn_versions](https://metacpan.org/pod/Catmandu::Fix::isbn_versions)
 - [Catmandu::Fix::issn](https://metacpan.org/pod/Catmandu::Fix::issn)
 - [Catmandu::Fix::uuid](https://metacpan.org/pod/Catmandu::Fix::uuid)
 - [Catmandu::Fix::memento\_find](https://metacpan.org/pod/Catmandu::Fix::memento_find)
