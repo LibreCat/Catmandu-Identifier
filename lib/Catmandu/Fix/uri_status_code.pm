@@ -1,5 +1,7 @@
 package Catmandu::Fix::uri_status_code;
 
+our $VERSION = '0.09';
+
 use Catmandu::Sane;
 use LWP::UserAgent;
 use Moo;

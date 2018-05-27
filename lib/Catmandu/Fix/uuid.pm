@@ -1,5 +1,7 @@
 package Catmandu::Fix::uuid;
 
+our $VERSION = '0.09';
+
 use Catmandu::Sane;
 use Data::UUID;
 use Moo;

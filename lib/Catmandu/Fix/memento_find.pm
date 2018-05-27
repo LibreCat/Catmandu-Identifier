@@ -1,5 +1,7 @@
 package Catmandu::Fix::memento_find;
 
+our $VERSION = '0.09';
+
 use Catmandu::Sane;
 use Moo;
 use Memento::TimeTravel;

@@ -1,5 +1,7 @@
 package Catmandu::Fix::orcid_bio;
 
+our $VERSION = '0.09';
+
 use Catmandu::Sane;
 use Moo;
 use WWW::ORCID;

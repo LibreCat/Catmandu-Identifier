@@ -1,5 +1,7 @@
 package Catmandu::Fix::issn;
 
+our $VERSION = '0.09';
+
 use Catmandu::Sane;
 use Business::ISSN;
 use Moo;
