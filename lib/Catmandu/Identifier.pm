@@ -46,6 +46,8 @@ Catmandu::Identifier - Namespace fixing around identifiers (for normalization, v
 
 =item * L<Catmandu::Fix::orcid_works>
 
+=item * L<Catmandu::Fix::uri_status_code>
+
 =item * L<Catmandu::Fix::Condition::is_valid_isbn>
 
 =item * L<Catmandu::Fix::Condition::is_valid_issn>
