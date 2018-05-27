@@ -20,6 +20,7 @@ Catmandu::Identifier - Namespace fixing around identifiers (for normalization, v
 - [Catmandu::Fix::orcid\_find](https://metacpan.org/pod/Catmandu::Fix::orcid_find)
 - [Catmandu::Fix::orcid\_profile](https://metacpan.org/pod/Catmandu::Fix::orcid_profile)
 - [Catmandu::Fix::orcid\_works](https://metacpan.org/pod/Catmandu::Fix::orcid_works)
+- [Catmandu::Fix::uri\_status\_code](https://metacpan.org/pod/Catmandu::Fix::uri_status_code)
 - [Catmandu::Fix::Condition::is\_valid\_isbn](https://metacpan.org/pod/Catmandu::Fix::Condition::is_valid_isbn)
 - [Catmandu::Fix::Condition::is\_valid\_issn](https://metacpan.org/pod/Catmandu::Fix::Condition::is_valid_issn)
 - [Catmandu::Fix::Condition::is\_uri](https://metacpan.org/pod/Catmandu::Fix::Condition::is_uri)
