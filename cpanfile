@@ -6,7 +6,7 @@ on 'test', sub {
   requires 'Test::More', '1.001003';
   requires 'Test::Pod', 0;
   requires 'Log::Any::Test', '1.03';
-  requires 'Test::LWP::UserAgent', '0';
+  requires 'Test::LWP::UserAgent', '>=0.033';
 
 };
 
