@@ -2,6 +2,9 @@ Revision history for Catmandu-Identifier
 
 {{$NEXT}}
 
+0.12_001  2019-08-19 13:35:22 CEST
+    - fix dependencies
+
 0.11  2019-08-19 12:15:33 CEST
     - remove Data::UUID dependency (GH #13)
 

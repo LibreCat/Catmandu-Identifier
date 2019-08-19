@@ -55,13 +55,13 @@
             "Log::Any::Test" : "1.03",
             "Test::Deep" : "0.112",
             "Test::Exception" : "0.32",
-            "Test::LWP::UserAgent" : "0",
+            "Test::LWP::UserAgent" : "0.033",
             "Test::More" : "1.001003",
             "Test::Pod" : "0"
          }
       }
    },
-   "release_status" : "stable",
+   "release_status" : "testing",
    "resources" : {
       "bugtracker" : {
          "web" : "https://github.com/LibreCat/Catmandu-Identifier/issues"
@@ -73,7 +73,7 @@
          "web" : "https://github.com/LibreCat/Catmandu-Identifier"
       }
    },
-   "version" : "0.11",
+   "version" : "0.12_001",
    "x_contributors" : [
       "brian d foy <brian.d.foy@gmail.com>",
       "Ere Maijala <ere.maijala@helsinki.fi>",

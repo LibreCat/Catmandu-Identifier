@@ -1,6 +1,6 @@
 package Catmandu::Fix::orcid_profile;
 
-our $VERSION = '0.11';
+our $VERSION = '0.12_001';
 
 use Catmandu::Sane;
 use Moo;
