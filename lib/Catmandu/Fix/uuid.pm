@@ -1,6 +1,6 @@
 package Catmandu::Fix::uuid;
 
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 use Catmandu::Sane;
 use Data::UUID::MT;
