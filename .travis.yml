@@ -8,7 +8,7 @@ install:
   - cpanm --quiet --notest --installdeps .
   - cpanm --quiet --notest --skip-satisfied Devel::Cover
 script:
-  - perl Build.PL && cover -test
+  - perl Build.PL && ./Build build && cover -test
 after_success:
   - cpanm --quiet --notest --skip-satisfied Devel::Cover::Report::Coveralls
   - cover -report coveralls
