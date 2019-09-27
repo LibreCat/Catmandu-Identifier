@@ -10,7 +10,7 @@ on 'test', sub {
 
 };
 
-requires 'Module::Build', '>=0.4229'; 
+requires 'Module::Build::Tiny'; 
 requires 'JSON';
 requires 'Moo';
 requires 'Scalar::Util';
