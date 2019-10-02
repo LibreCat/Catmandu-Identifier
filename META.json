@@ -39,11 +39,12 @@
          "requires" : {
             "Business::ISBN" : "2.010",
             "Business::ISSN" : "0.91",
-            "Catmandu" : "1.2002",
+            "Catmandu" : "1.10",
             "Data::UUID::MT" : "1.001",
             "Data::Validate::URI" : "0",
             "JSON" : "0",
             "LWP::Simple" : "0",
+            "Module::Build::Tiny" : "0",
             "Moo" : "0",
             "Scalar::Util" : "0",
             "WWW::ORCID" : "0.0401",
@@ -61,7 +62,7 @@
          }
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "web" : "https://github.com/LibreCat/Catmandu-Identifier/issues"
@@ -73,7 +74,7 @@
          "web" : "https://github.com/LibreCat/Catmandu-Identifier"
       }
    },
-   "version" : "0.12_001",
+   "version" : "0.12",
    "x_contributors" : [
       "brian d foy <brian.d.foy@gmail.com>",
       "Ere Maijala <ere.maijala@helsinki.fi>",

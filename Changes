@@ -2,6 +2,9 @@ Revision history for Catmandu-Identifier
 
 {{$NEXT}}
 
+0.12  2019-10-02 11:46:49 CEST
+    - downgrade Catmandu dependency
+
 0.12_001  2019-08-19 13:35:22 CEST
     - fix dependencies
 
