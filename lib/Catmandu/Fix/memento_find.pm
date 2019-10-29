@@ -15,7 +15,7 @@ with 'Catmandu::Fix::SimpleGetValue';
 sub emit_value {
     my ($self, $var) = @_;
     my $date = $self->date;
-    
+
     "${var} = Memento::TimeTravel::find_mementos(${var},${date}) if is_string(${var}) && length(${var});";
 }
 
@@ -33,6 +33,5 @@ Catmandu::Fix::memento_find - find Mementos for a url
 L<Catmandu::Fix>
 
 =cut
-
 
 1;

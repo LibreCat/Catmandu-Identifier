@@ -12,9 +12,9 @@ has path => (fix_arg => 1);
 with 'Catmandu::Fix::SimpleGetValue';
 
 sub emit_value {
-  my ($self, $var) = @_;
+    my ($self, $var) = @_;
 
-  qq|
+    qq|
 if (is_value(${var}) && length(${var})) {
   my \$val = ${var};
   \$val =~ s/\\s.*//;
