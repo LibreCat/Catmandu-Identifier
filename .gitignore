@@ -9,3 +9,4 @@ MYMETA.*
 /.prove
 local
 cpanfile.snapshot
+.tidyall.d/*
