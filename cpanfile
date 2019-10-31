@@ -5,6 +5,7 @@ on 'test', sub {
   requires 'Test::Exception', '0.32';
   requires 'Test::More', '1.001003';
   requires 'Test::Pod', 0;
+  requires 'HTTP::Response', 0;
   requires 'Log::Any::Test', '1.03';
   requires 'Test::LWP::UserAgent', '0.033';
 
