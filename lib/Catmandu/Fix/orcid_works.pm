@@ -24,7 +24,7 @@ Catmandu::Fix::orcid_profile - find ORCID works for an identifier
 =head1 SYNOPSIS
 
    # Find an ORCID bio for an identifier
-   # orid: '0000-0001-8390-6171'
+   # orcid: '0000-0001-8390-6171'
    orcid_works(orcid)
 
 =head1 SEE ALSO
