@@ -11,13 +11,14 @@ on 'test', sub {
 
 };
 
-requires 'Module::Build::Tiny'; 
+requires 'Module::Build::Tiny';
 requires 'JSON';
 requires 'Moo';
 requires 'Scalar::Util';
 requires 'Catmandu', '>=1.10';
 requires 'Business::ISSN', '0.91';
-requires 'Business::ISBN', '2.010';
+requires 'Business::ISBN', '3.005';
+requires 'Business::ISBN::Data', '20191107';
 requires 'Data::UUID::MT', '>=1.001';
 requires 'LWP::Simple', 0;
 requires 'WWW::ORCID', '>=0.0401';
