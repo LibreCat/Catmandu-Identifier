@@ -1,6 +1,6 @@
 package Catmandu::Fix::orcid_works;
 
-our $VERSION = '0.13';
+our $VERSION = '0.14';
 
 use Catmandu::Sane;
 use Moo;
