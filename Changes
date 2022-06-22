@@ -2,6 +2,10 @@ Revision history for Catmandu-Identifier
 
 {{$NEXT}}
 
+0.15  2022-06-22 15:21:06 CEST
+    - remove travis-ci config and add github actions
+    - upgrade dependencies
+
 0.14  2019-12-19 08:43:03 CET
     - update dependencies (GH #16)
 
