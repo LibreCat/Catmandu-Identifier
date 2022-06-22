@@ -1,0 +1,49 @@
+name: linux
+
+on:
+  push:
+    branches: [ '*' ]
+  pull_request:
+    branches: [ main, dev ]
+  workflow_dispatch:
+    branches: [ '*' ]
+
+jobs:
+  perl:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        perl-version:
+        - '5.14'
+        - '5.16'
+        - '5.20'
+        - '5.24'
+        - '5.28'
+        - '5.32'
+        include:
+          - perl-version: '5.36'
+            os: ubuntu-latest
+            coverage: true
+    container:
+      image: perl:${{ matrix.perl-version }}
+    steps:
+    - uses: actions/checkout@v3
+    - run: env | sort
+    - run: perl -V
+    - name: Install older dependency versions for older Perls
+      run: |
+        if perl -Mversion -E 'exit not version->parse("v$ARGV[0]") < version->parse('v5.20')' ${{ matrix.perl-version }}; then
+          cpanm -n 'Getopt::Long::Descriptive~<0.105' 'App::Cmd~<0.332'
+        fi
+    - run: cpanm -n --installdeps .
+    - name: Run tests (no coverage)
+      if: ${{ !matrix.coverage }}
+      run: prove -lr t
+    - name: Run tests (with coverage)
+      if: ${{ matrix.coverage }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        cpanm -n Devel::Cover::Report::Coveralls
+        perl Build.PL && ./Build build && cover -test -report coveralls
