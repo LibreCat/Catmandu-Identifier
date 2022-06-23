@@ -4,7 +4,7 @@ Catmandu::Identifier - Namespace fixing around identifiers (for normalization, v
 
 # STATUS
 
-[![Build Status](https://travis-ci.org/LibreCat/Catmandu-Identifier.svg?branch=master)](https://travis-ci.org/LibreCat/Catmandu-Identifier)
+[![Test status](https://github.com/LibreCat/Catmandu-Identifier/actions/workflows/linux.yml/badge.svg)
 [![Coverage](https://coveralls.io/repos/LibreCat/Catmandu-Identifier/badge.png?branch=master)](https://coveralls.io/r/LibreCat/Catmandu-Identifier)
 [![CPANTS kwalitee](http://cpants.cpanauthors.org/dist/Catmandu-Identifier.png)](http://cpants.cpanauthors.org/dist/Catmandu-Identifier)
 
